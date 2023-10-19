@@ -11,15 +11,15 @@ namespace Niculae_Ana_Maria_Lab1.Controllers
             return Content(mesajBunVenit);
         }
 
-        public IActionResult SalutUtilizator()
+        public IActionResult Salut()
         {
             string salut = "Salut!";
             return Content(salut);
         }
 
-        public IActionResult MesajCuParametri(string text, int numar)
+        public IActionResult Mesaj(string nume, int varsta)
         {
-            string mesaj = $"Textul introdus este: {text}, iar numărul este: {numar}";
+            string mesaj = $"Numele meu este {nume} si am {varsta} de anii";
             return Content(mesaj);
         }
     }
